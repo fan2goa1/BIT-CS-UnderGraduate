@@ -1,0 +1,19 @@
+加入help界面
+添加初始化	hButtonMask, hHelpButton, hHelp, hHelpMask,
+		IDB_help, IDB_helpmask, IDB_help_button, IDB_buttonmask
+更改	LoadBitImage
+	Paint_0	
+	WndProc
+
+添加	Paint_4
+	Paint_5
+----------------------------------------
+上面不用管
+需要注释的行号：
+1418-1424
+1465-1491
+1118-1122
+1148-1157
+------------------------------------------
+12.13新加
+添加 	1945-1986

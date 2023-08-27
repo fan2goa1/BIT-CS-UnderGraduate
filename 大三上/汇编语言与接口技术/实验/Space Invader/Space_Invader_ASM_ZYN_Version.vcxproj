@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{41204a49-7406-4fb0-b88d-89e3bf9e921b}</ProjectGuid>
+    <RootNamespace>SpaceInvaderASMZYNVersion</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <VCToolsVersion>14.20.27508</VCToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <VCToolsVersion>14.20.27508</VCToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <VCToolsVersion>14.20.27508</VCToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <VCToolsVersion>14.20.27508</VCToolsVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\masm32\lib;</AdditionalLibraryDirectories>
+    </Link>
+    <MASM>
+      <IncludePaths>D:\masm32\include;</IncludePaths>
+    </MASM>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\masm32\lib;</AdditionalLibraryDirectories>
+    </Link>
+    <MASM>
+      <IncludePaths>D:\masm32\include;</IncludePaths>
+    </MASM>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\masm32\lib;</AdditionalLibraryDirectories>
+    </Link>
+    <MASM>
+      <IncludePaths>D:\masm32\include;</IncludePaths>
+    </MASM>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\masm32\lib;</AdditionalLibraryDirectories>
+    </Link>
+    <MASM>
+      <IncludePaths>D:\masm32\include;</IncludePaths>
+    </MASM>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <MASM Include="main.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Space_Invader_ASM_ZYN_Version.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
+    <Image Include="source\back.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="source\board.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="source\boardmask.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="source\boss.bmp" />
+    <Image Include="source\boss_mask.bmp" />
+    <Image Include="source\Buddha.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="source\BuddhaBlack.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="source\Buddhamask.bmp" />
+    <Image Include="source\button_help.bmp" />
+    <Image Include="source\button_mask.bmp" />
+    <Image Include="source\button_return.bmp" />
+    <Image Include="source\button_stop.bmp" />
+    <Image Include="source\CheckAndRepair.bmp" />
+    <Image Include="source\CheckAndRepairBlack.bmp" />
+    <Image Include="source\eBullet0.bmp" />
+    <Image Include="source\eBullet0mask.bmp" />
+    <Image Include="source\eBullet1.bmp" />
+    <Image Include="source\eBullet1mask.bmp" />
+    <Image Include="source\enemy0.bmp" />
+    <Image Include="source\enemy0mask.bmp" />
+    <Image Include="source\enemy1.bmp" />
+    <Image Include="source\enemy1mask.bmp" />
+    <Image Include="source\enemy_health.bmp" />
+    <Image Include="source\EnergyPlot.bmp" />
+    <Image Include="source\EnergyPlotmask.bmp" />
+    <Image Include="source\heart.bmp" />
+    <Image Include="source\heartmask.bmp" />
+    <Image Include="source\help.bmp" />
+    <Image Include="source\help_mask.bmp" />
+    <Image Include="source\LifeBag.bmp" />
+    <Image Include="source\LifeBagmask.bmp" />
+    <Image Include="source\menumask.bmp" />
+    <Image Include="source\menu_continue.bmp" />
+    <Image Include="source\menu_quit.bmp" />
+    <Image Include="source\menu_restart.bmp" />
+    <Image Include="source\menu_start.bmp" />
+    <Image Include="source\num0.bmp" />
+    <Image Include="source\num0_mask.bmp" />
+    <Image Include="source\num1.bmp" />
+    <Image Include="source\num1_mask.bmp" />
+    <Image Include="source\num2.bmp" />
+    <Image Include="source\num2_mask.bmp" />
+    <Image Include="source\num3.bmp" />
+    <Image Include="source\num3_mask.bmp" />
+    <Image Include="source\num4.bmp" />
+    <Image Include="source\num4_mask.bmp" />
+    <Image Include="source\num5.bmp" />
+    <Image Include="source\num5_mask.bmp" />
+    <Image Include="source\num6.bmp" />
+    <Image Include="source\num6_mask.bmp" />
+    <Image Include="source\num7.bmp" />
+    <Image Include="source\num7_mask.bmp" />
+    <Image Include="source\num8.bmp" />
+    <Image Include="source\num8_mask.bmp" />
+    <Image Include="source\num9.bmp" />
+    <Image Include="source\num9_mask.bmp" />
+    <Image Include="source\pBullet0.bmp" />
+    <Image Include="source\pBullet0mask.bmp" />
+    <Image Include="source\pBullet1.bmp" />
+    <Image Include="source\pBullet1mask.bmp" />
+    <Image Include="source\plane_D.bmp" />
+    <Image Include="source\plane_Dmask.bmp" />
+    <Image Include="source\plane_L.bmp" />
+    <Image Include="source\plane_Lmask.bmp" />
+    <Image Include="source\plane_R.bmp" />
+    <Image Include="source\plane_Rmask.bmp" />
+    <Image Include="source\plane_U.bmp" />
+    <Image Include="source\plane_Umask.bmp" />
+    <Image Include="source\victory.bmp" />
+    <Image Include="source\victory_mask.bmp" />
+    <Image Include="source\wingman.bmp" />
+    <Image Include="source\wingmanMask.bmp" />
+    <Image Include="source\wingman_button.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

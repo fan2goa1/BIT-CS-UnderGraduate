@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="main.asm">
+      <Filter>源文件</Filter>
+    </MASM>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Space_Invader_ASM_ZYN_Version.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\back.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\board.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\boardmask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\Buddha.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\BuddhaBlack.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\Buddhamask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\button_return.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\button_stop.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\CheckAndRepair.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\CheckAndRepairBlack.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\eBullet0.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\eBullet0mask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\eBullet1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\eBullet1mask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\enemy0.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\enemy0mask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\enemy1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\enemy1mask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\EnergyPlot.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\EnergyPlotmask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\heart.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\heartmask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\LifeBag.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\LifeBagmask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\menu_continue.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\menu_quit.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\menu_restart.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\menu_start.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\menumask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\num0.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\num1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\num2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\num3.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\num4.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\num5.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\num6.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\num7.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\num8.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\num9.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\pBullet0.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\pBullet0mask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\pBullet1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\pBullet1mask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\plane_D.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\plane_Dmask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\plane_L.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\plane_Lmask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\plane_R.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\plane_Rmask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\plane_U.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\plane_Umask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\button_help.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\button_mask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\wingman.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\wingman_button.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\wingmanMask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\help.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\help_mask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\enemy_health.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\boss.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\boss_mask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\victory.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\victory_mask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\num0_mask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\num1_mask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\num2_mask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\num3_mask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\num4_mask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\num5_mask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\num6_mask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\num7_mask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\num8_mask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="source\num9_mask.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

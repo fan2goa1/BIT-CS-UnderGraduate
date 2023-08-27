@@ -1,0 +1,225 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "icon1.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BACK                BITMAP                  "source\\back.bmp"
+
+IDB_board               BITMAP                  "source\\board.bmp"
+
+IDB_boardmask           BITMAP                  "source\\boardmask.bmp"
+
+IDB_Buddha              BITMAP                  "source\\Buddha.bmp"
+
+IDB_BuddhaBlack         BITMAP                  "source\\BuddhaBlack.bmp"
+
+IDB_Buddhamask          BITMAP                  "source\\Buddhamask.bmp"
+
+IDB_button_return       BITMAP                  "source\\button_return.bmp"
+
+IDB_button_stop         BITMAP                  "source\\button_stop.bmp"
+
+IDB_CheckAndRepair      BITMAP                  "source\\CheckAndRepair.bmp"
+
+IDB_CheckAndRepairBlack BITMAP                  "source\\CheckAndRepairBlack.bmp"
+
+IDB_eBullet0            BITMAP                  "source\\eBullet0.bmp"
+
+IDB_eBullet0mask        BITMAP                  "source\\eBullet0mask.bmp"
+
+IDB_eBullet1            BITMAP                  "source\\eBullet1.bmp"
+
+IDB_eBullet1mask        BITMAP                  "source\\eBullet1mask.bmp"
+
+IDB_enemy0              BITMAP                  "source\\enemy0.bmp"
+
+IDB_enemy0mask          BITMAP                  "source\\enemy0mask.bmp"
+
+IDB_enemy1              BITMAP                  "source\\enemy1.bmp"
+
+IDB_enemy1mask          BITMAP                  "source\\enemy1mask.bmp"
+
+IDB_EnergyPlot          BITMAP                  "source\\EnergyPlot.bmp"
+
+IDB_EnergyPlotmask      BITMAP                  "source\\EnergyPlotmask.bmp"
+
+IDB_heart               BITMAP                  "source\\heart.bmp"
+
+IDB_heartmask           BITMAP                  "source\\heartmask.bmp"
+
+IDB_LifeBag             BITMAP                  "source\\LifeBag.bmp"
+
+IDB_LifeBagmask         BITMAP                  "source\\LifeBagmask.bmp"
+
+IDB_menu_continue       BITMAP                  "source\\menu_continue.bmp"
+
+IDB_menu_quit           BITMAP                  "source\\menu_quit.bmp"
+
+IDB_menu_restart        BITMAP                  "source\\menu_restart.bmp"
+
+IDB_menu_start          BITMAP                  "source\\menu_start.bmp"
+
+IDB_menumask            BITMAP                  "source\\menumask.bmp"
+
+IDB_num0                BITMAP                  "source\\num0.bmp"
+
+IDB_num1                BITMAP                  "source\\num1.bmp"
+
+IDB_num2                BITMAP                  "source\\num2.bmp"
+
+IDB_num3                BITMAP                  "source\\num3.bmp"
+
+IDB_num4                BITMAP                  "source\\num4.bmp"
+
+IDB_num5                BITMAP                  "source\\num5.bmp"
+
+IDB_num6                BITMAP                  "source\\num6.bmp"
+
+IDB_num7                BITMAP                  "source\\num7.bmp"
+
+IDB_num8                BITMAP                  "source\\num8.bmp"
+
+IDB_num9                BITMAP                  "source\\num9.bmp"
+
+IDB_pBullet0            BITMAP                  "source\\pBullet0.bmp"
+
+IDB_pBullet0mask        BITMAP                  "source\\pBullet0mask.bmp"
+
+IDB_pBullet1            BITMAP                  "source\\pBullet1.bmp"
+
+IDB_pBullet1mask        BITMAP                  "source\\pBullet1mask.bmp"
+
+IDB_plane_D             BITMAP                  "source\\plane_D.bmp"
+
+IDB_plane_Dmask         BITMAP                  "source\\plane_Dmask.bmp"
+
+IDB_plane_L             BITMAP                  "source\\plane_L.bmp"
+
+IDB_plane_Lmask         BITMAP                  "source\\plane_Lmask.bmp"
+
+IDB_plane_R             BITMAP                  "source\\plane_R.bmp"
+
+IDB_plane_Rmask         BITMAP                  "source\\plane_Rmask.bmp"
+
+IDB_plane_U             BITMAP                  "source\\plane_U.bmp"
+
+IDB_plane_Umask         BITMAP                  "source\\plane_Umask.bmp"
+
+IDB_help_button         BITMAP                  "source\\button_help.bmp"
+
+IDB_buttonmask          BITMAP                  "source\\button_mask.bmp"
+
+IDB_help                BITMAP                  "source\\help.bmp"
+
+IDB_helpmask            BITMAP                  "source\\help_mask.bmp"
+
+IDB_enemy_health        BITMAP                  "source\\enemy_health.bmp"
+
+IDB_boss                BITMAP                  "source\\boss.bmp"
+
+IDB_boss_mask           BITMAP                  "source\\boss_mask.bmp"
+
+IDB_victory             BITMAP                  "source\\victory.bmp"
+
+IDB_victory_mask        BITMAP                  "source\\victory_mask.bmp"
+
+IDB_num0_mask           BITMAP                  "source\\num0_mask.bmp"
+
+IDB_num1_mask           BITMAP                  "source\\num1_mask.bmp"
+
+IDB_num2_mask           BITMAP                  "source\\num2_mask.bmp"
+
+IDB_num3_mask           BITMAP                  "source\\num3_mask.bmp"
+
+IDB_num4_mask           BITMAP                  "source\\num4_mask.bmp"
+
+IDB_num5_mask           BITMAP                  "source\\num5_mask.bmp"
+
+IDB_num6_mask           BITMAP                  "source\\num6_mask.bmp"
+
+IDB_num7_mask           BITMAP                  "source\\num7_mask.bmp"
+
+IDB_num8_mask           BITMAP                  "source\\num8_mask.bmp"
+
+IDB_num9_mask           BITMAP                  "source\\num9_mask.bmp"
+
+IDB_wingman             BITMAP                  "source\\wingman.bmp"
+
+IDB_wingman_button      BITMAP                  "source\\wingman_button.bmp"
+
+IDB_wingmanMask         BITMAP                  "source\\wingmanMask.bmp"
+
+IDB_wingman_buttonBlack BITMAP                  "source\\wingman_buttonBlack.bmp"
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
