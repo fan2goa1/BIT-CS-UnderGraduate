@@ -30,12 +30,12 @@
 ## 大三上
 ![22-23-1.png](https://s2.loli.net/2023/08/26/TtoiW2KC9RkyUjq.png)
 
-[大三上课程及资料介绍]()
+[大三上课程及资料介绍](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/%E5%A4%A7%E4%B8%89%E4%B8%8A)
 
 ## 大三下
 ![22-23-2.png](https://s2.loli.net/2023/08/26/jvkoJxdTq15Ih3a.png)
 
-[大三下课程及资料介绍](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/%E5%A4%A7%E4%B8%89%E4%B8%8A)
+[大三下课程及资料介绍]()
 
 ## 大四上
 ![23-24-1.png](https://s2.loli.net/2023/08/26/5wlyvGi9ksT1mdK.png)
