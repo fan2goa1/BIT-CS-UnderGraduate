@@ -1,0 +1,139 @@
+Final Exam Solutions
+15-213 / 18-213 Fall 2011
+
+*********
+Problem 1
+*********
+1-a 2-b 3-c 4-b 5-c 6-a 7-b 8-b 9-a 10-c 
+
+*********
+Problem 2
+*********
+Value	FP bits	Rounded value
+ 2      100 00   2      normalized, exact
+ 13     110 10   12     normalized, round down
+ 1/8    000 10   1/8    exact, denorm
+ 15/4   101 00   4      normalized, round up
+
+*********
+Problem 3
+*********
+H=15
+J=7
+
+*********
+Problem 4
+*********
+gamma
+alpha
+beta
+delta
+epsilon
+
+*********
+Problem 5
+*********
+int loopy(int a[], int n) {
+    int i;
+    int x = 0;
+
+    for(i = 0; x < n; i++) {
+        if (x < a[i])
+            x = a[i];
+    }
+    return x;
+}
+
+*********
+Problem 6
+*********
+A. eax=0x8048395
+B. eip=0x804839b
+
+C. 
+0xffffd824: 0x4    	arg2
+0xffffd820: 0x2    	arg1
+0xffffd81c: UNKNOWN 	return addr
+0xffffd818: 0xffffd838	old ebp
+0xffffd814: 0x3         arg2
+0xffffd810: 0x2         arg1
+0xffffd80c: 0x8048398   return addr
+
+D. ebp=0xffffd818
+
+*********
+Problem 7
+*********
+A. 9/16
+B. 1/8
+
+*********
+Problem 8
+*********
+A. 
+Child: sum=30
+Parent: sum=15
+
+B. There are three possible outputs:
+1. Child: sum=30
+   Parent: sum=15
+
+2. Parent: sum=15
+   Child: sum=30
+
+3. Child: sum=15 (if fork fails and returns -1)
+
+C. The possible outputs are any variant of "5030" interspersed with  "9".
+E.g., 95030, 59030, 50930, 50390
+
+*********
+Problem 9
+*********
+A. 
+(a) 20 bits to represent virtual address space
+(b) 18 bits to represent physical address space
+(c) 12 bits to reprsent page table offset 
+
+B.
+VPN: 0x1F
+TLBI: 0x3
+TLBT: 0x07
+TLB Hit: N
+Page Fault: N
+Physical Address: 0x15213
+
+C.
+VPN: 0x14
+TLBI: 0x0
+TLBT: 0x05
+TLB Hit: Y
+Page Fault: N
+Physical Address: 0x13213
+
+**********
+Problem 10
+**********
+A. Output: buf = foobar
+B. Output: buf = foofoo
+
+**********
+Problem 11
+**********
+A. mutex=1, items=0, slots=10
+B. 
+insert:
+   P(slots)
+   P(mutex)
+   add_item(item)
+   V(mutex)
+   V(items
+
+remove:
+   P(items)
+   P(mutex)
+   item = remove_item
+   V(mutex)
+   V(slots)
+   return item
+
+

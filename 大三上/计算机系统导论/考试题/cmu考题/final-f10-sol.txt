@@ -1,0 +1,143 @@
+Final exam solutions
+15-213 Fall 2010
+
+*********
+Problem 1
+*********
+1. 	client	server
+listen	x	3
+connect	2	x
+accept	x	4
+socket	1	1
+bind	x	2
+
+2-d 3-a 4-b 5-c 6-b 7-c 8-a 9-d 10-d
+11-c 12-a 13-b 14-c 15-d 16-d 17-b 18-b 19-d
+
+*********
+Problem 2
+*********
+pos inf: 0 1111 000
+nan:     x 111 yyyy (where yyyy not 0000)
+
+		       format A bin	val	format b	val
+largest normalized:    0 1110 111	240	0 1110 1111	248
+smallest positive:     0 0000 001	1/512	0 0000 0001	1/1024
+Negative one:	       1 0111 000	-1	1 0111 0000	-1
+2.625:		       0 1000 010	2.5	0 1000 0101	2.625 
+
+*********
+Problem 3
+*********
+H=9
+J=15
+
+*********
+Problem 4
+*********
+1. continue
+2. a[k] == k
+3. a[k]
+4. -1
+
+Extra credit: Given an array consisting entirely of integers between 0
+and n - 1 (inclusive), rofl returns an integer which occurs more than
+once, if one exists, and -1 otherwise.
+
+*********
+Problem 5
+*********
+A.
+type1_t: any type t s.t. sizeof(t)==4 (e.g., int, unsigned int, etc)
+type2_t: char
+CNT=7
+
+B.
+N, Gives offset of 28
+Y
+Y
+N, Gives offset of 48
+Y
+N, Gives offset of 32.
+
+*********
+Problem 6
+*********
+Stack at point A:
+printFunc
+tree
+rtnAddr
+old ebp
+callee saved esi
+callee saved ebx
+XXXX
+XXXX
+XXXX
+tree
+
+Stack at point B:
+printFunc
+tree
+rtnAddr
+old ebp
+callee saved esi
+callee saved ebx
+XXXX
+XXXX
+printFunc
+tree->left
+
+*********
+Problem 7
+*********
+A. 4 misses
+B. 16 misses
+C. 16x16 will have MORE misses than 17x17
+
+*********
+Problem 8
+*********
+Procs: cnt = 2
+Threads: cnt = 4
+
+*********
+Problem 9
+*********
+1. 32 byte pages
+2. 16 entries/page directory
+3. 2-byte page directory entries
+4. 128 entries/page table
+5. 2-byte page table entries
+
+**********
+Problem 10
+**********
+snippet 1: Possible outcomes: nothing, "a", "b", "ab", "ba"
+snippet 2: Possible outcomes: "bac", "bca", "does not terminate"
+
+**********
+Problem 11
+**********
+prod_sem=10 /* 10 slots */
+cons_sem=0  /* 0 items */
+
+/* wait for two slots */
+P(prod_sem)
+P(prod_sem)
+produce2()
+/* signal two new items */
+V(cons_sem)
+V(cons_sem)
+
+
+/* wait for three items */
+P(cons_sem)
+P(cons_sem)
+P(cons_sem)
+consume3()
+/* signal three new slots */
+V(prod_sem)
+V(prod_sem)
+V(prod_sem)
+
+

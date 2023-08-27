@@ -1,0 +1,148 @@
+Final Exam Solutions
+15-213 / 18-213 Fall 2012
+
+*********
+Problem 1
+*********
+01-b 02-a 03-c 04-d 05-a 06-e 07-b 08-a 09-c 10-b
+11-d 12-d 13-b 14-(d or e) 15-c 16-d 17-a 18-b
+
+1pt each
+
+For 1.14, we allowed e, even though it's not strictly true, because if
+appears in the lecture notes and textbook.
+
+*********
+Problem 2
+*********
+      | A        | B  
+Three | 0 100 10 | 0 10 100   Exact in both formats
+7/8   | 0 010 11 | 0 00 111   Exact in both formats, norm in A, denorm in B
+15/8  | 0 100 00 | 0 01 111   Format A round to even, format B exact
+1pt each
+
+*********
+Problem 3
+*********
+H=15
+J=10
+3 pts each, 1/2 credit if reversed
+
+*********
+Problem 4
+*********
+int loop (int a[], int n) {
+    int i, sum;
+
+    sum = 0; // 1pt
+    for (i = 0; i < n; i++) { //3 pts
+        sum += a[i]/4;  // 3pts
+        or 
+        sum += (a[i] < 0 ? a[i] + 3 : a[i]) >> 2;    
+    }
+        return sum; //1 pt
+}
+Negative integers must be biased before using shift right to divide by
+a power of two
+
+*********
+Problem 5
+*********
+Stack      The diagram starts with the            
+addresss   arguments for foo()                    
+          +-----------------------------------+
+0xffffd830| 4                                 |
+          +-----------------------------------+
+0xffffd82c| caller ra: 0x080483e6             |
+          +-----------------------------------+
+0xffffd828| old ebp: 0xffffd848               |
+          +-----------------------------------+
+0xffffd824| ebx                               |
+          +-----------------------------------+
+0xffffd820| 3                                 | 
+          +-----------------------------------+
+0xffffd81c| caller ra: 0x80483be              |
+          +-----------------------------------+
+0xffffd818| old ebp: 0xffffd828               | <- %ebp = 0xffffd818
+          +-----------------------------------+
+0xffffd814| ebx (or 4)                        | 
+          +-----------------------------------+
+0xffffd810| 2                                 | <- %esp = 0xffffd810
+          +-----------------------------------+
+1 pt each
+
+*********
+Problem 6
+*********
+A.
+src		dst
+m m		m m
+m h		m m
+
+B.
+src		dst
+m h		m h
+m h		m h
+
+1 pt each
+
+*********
+Problem 7
+*********
+a=5 b=2 c=4
+2 pts each
+
+*********
+Problem 8
+*********
+A. N
+B. Y
+C. Y
+D. N
+E. Y
+2pts correct, -1 incorrect, 0 blank
+
+*********
+Problem 9
+*********
+Part 1. Not graded. Only there to help you organize your work
+A: VPN: [19-10]     VPO: [9-0]
+   TLBT: [19-13]    TLBI: [12-10]
+B: PPN: [17-10]     PPO: [9-0]
+
+Part 2. 
+//Part A not graded. Provided to help you organize your work
+
+Address: 078E6
+A:    0000 0111 1000 1110 0110 
+
+B:    VPN:	  01E  //5 pts
+      TLBI:	  6
+      TLBT:	  03
+      TLB hit?	  N
+      page fault? N
+      PPN:	  57
+
+C:    01 0101 1100 1110 0110 //1 pt
+
+Address: 04AA4
+A: 	0000 0100 1010 1010 0100
+
+B:	VPN:		012 //5 pts
+	TLBI:		2
+	TLBT:		02
+	TLB hit?	Y
+	page fault?	N
+	PPN:		68
+
+C: 	01 1010 0010 1010 0100 //1 pt
+
+**********
+Problem 10
+**********
+A. No, each thread has its own heap variable for myid.
+B. Yes, both threads can point to myid.
+C. No, myid is passed in on the stack.
+D. Yes, the mutex doesn't protect myid.
+E. No, the mutex protects the assignment of myid.
+

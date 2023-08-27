@@ -1,0 +1,309 @@
+Final Exam Solutions
+CS 213 Spring 2011
+
+*********
+Problem 1
+*********
+
+1. d
+2. d
+3. c
+4. c
+5. a
+6. c
+7. a
+8. b
+9. d
+10. b
+11. c
+12. c
+13. c
+14. c
+15. c
+16. c
+17. c
+18. b
+19. a
+20. a
+21. b
+22. d
+23. a
+24. d
+
+
+*********
+Problem 2
+*********
+
+A.
+    +--------------------------------+
+    |            unknown             |  0xffff1004
+    +--------------------------------+
+    |               3                |  0xffff1000
+    +--------------------------------+
+    |            unknown             |  0xffff0ffc
+    +--------------------------------+
+    |            unknown             |  0xffff0ff8
+    +--------------------------------+
+    |            unknown             |  0xffff0ff4
+    +--------------------------------+
+    |               2                |  0xffff0ff0
+    +--------------------------------+
+    |           0x08048407           |  0xffff0fec
+    +--------------------------------+
+    |           0xffff0ff8           |  0xffff0fe8
+    +--------------------------------+
+    |            unknown             |  0xffff0fe4
+    +--------------------------------+
+    |               1                |  0xffff0fe0
+    +--------------------------------+
+    |           0x08048432           |  0xffff0fdc
+    +--------------------------------+
+    |           0xffff0fe8           |  0xffff0fd8
+    +--------------------------------+
+    |            unknown             |  0xffff0fd4
+    +--------------------------------+
+    |               0                |  0xffff0fd0
+    +--------------------------------+
+    |           0x08048407           |  0xffff0fcc
+    +--------------------------------+
+    |           0xffff0fd8           |  0xffff0fc8
+    +--------------------------------+
+    |               0                |  0xffff0fc4
+    +--------------------------------+
+    |            unknown             |  0xffff0fc0
+    +--------------------------------+
+
+B. 
+    esp: 0xffff0fcc
+    ebp: 0xffff0fd8
+ 
+
+*********
+Problem 3
+*********
+
+node_t *lmao(node_t *n, int f(node_t *))
+{
+    node_t *a, *b;
+
+    if (!n)
+    {
+        return NULL;
+    }
+
+    a = lmao(n->next, f);
+
+    if (f(n) > 0)
+    {
+        b = malloc(16);
+        b->data = n->data;
+        b->next = a;
+    }
+
+    return a;
+}
+
+
+*********
+Problem 4
+*********
+
+A.
+    1, 2, 3, 4, 5, 6
+
+B. 
+    124, 142, 214, 241, 412, 421, 
+    12, 21, 14, 41, 24, 42
+
+C.
+    3, 5, 6, 34, 52, 61
+
+
+*********
+Problem 5
+*********
+
+A.
+    When either a read or write lock is acquired, the function returns without
+    calling sem_post(), so all future calls to sem_wait() will block forever.
+
+B.  
+    Yes.  Writers can be starved, since as long as one reader remains in
+    the critical section at all times (that is, lock->readers remains
+    greater than or equal to one), a writer will never be able to acquire
+    the lock.
+
+
+*********
+Problem 6
+*********
+
+A.
+    001213
+
+B.
+    001012314
+
+
+*********
+Problem 7
+*********
+
+A.  
+    Thread X        Thread Y
+    --------        --------
+    P(&mutex_a)
+    A += 10
+                    P(&mutex_b)
+                    B += 10
+    P(&mutex_b)     
+                    P(&mutex_a)
+
+B.  
+    All three of the following work.  You only needed two.  Others may be
+    possible.
+
+    Thread X        Thread Y
+    ---------       --------
+    P(&mutex_g);    P(&mutex_g);
+    A += 10;        B += 10;
+    B += 20;        A += 20;
+    A += 30;        B += 30;
+    V(&mutex_g);    V(&mutex_g);
+
+
+    Thread X        Thread Y
+    --------        --------
+    P(&mutex_a);    P(&mutex_b);
+    A += 10;        B += 10;
+    V(&mutex_a);    V(&mutex_b);
+    P(&mutex_b);    P(&mutex_a);
+    B += 20;        A += 20;
+    V(&mutex_b);    V(&mutex_a);
+    P(&mutex_a);    P(&mutex_b);
+    A += 30;        B += 30;
+    V(&mutex_a);    V(&mutex_b);
+
+
+    Thread X        Thread Y
+    --------        --------
+    P(&mutex_a);    P(&mutex_a);
+    A += 10;        P(&mutex_b);
+    P(&mutex_b);    B += 10;
+    B += 20;        A += 20;
+    V(&mutex_b);    V(&mutex_a);
+    A += 30;        B += 30;
+    V(&mutex_a);    V(&mutex_b);
+
+
+*********
+Problem 8
+*********
+
+A.
+    next_prime computes a result in a *static* structure and returns a pointer
+    to that structure
+
+B. 
+    Thread 1 might unlock the mutex and before it returns thread 2 might call
+    next_prime.  The key is that ts_next_prime still computes a result in a static 
+    structure and returns a pointer to that structure.
+
+C. 
+    struct big_number *ts_next_prime(struct big_number current_prime) {
+        struct big_number *value_ptr;
+
+        struct big_number *ret_ptr = malloc(sizeof(struct big_number));
+        sem_wait(&mutex);
+        value_ptr = next_prime(current_prime);
+        *ret_ptr = *value_ptr;
+
+        return ret_ptr;
+    }
+
+    This works because the returned pointer now points to malloced space that
+    is not pointed shared between threads.
+
+D.
+    The thread same version requires mutex calls, malloc, and copying of data
+
+E.
+    No
+
+
+*********
+Problem 9
+*********
+
+A.
+    abc
+
+B.
+    dddeeeXXffffgghX
+    iiiiiiiijjjj
+
+
+**********
+Problem 10
+**********
+
+A.
+    3
+
+B.  
+    0 000 0001  ==>  1/64
+
+C.
+    0 000 1111  ==>  15/64
+
+D.
+    1 111 0000
+
+E.
+       Bits         Value
+    0 000 0000          0
+    1 010 0000       -1/2
+    1 110 1010        -13
+    0 000 0100       1/16
+    0 111 1111        NaN
+    0 000 0100     15/256
+
+
+**********
+Problem 11
+**********
+
+1, 01, 11, 015, 055, 056, 115, 155
+
+
+**********
+Problem 12
+**********
+
+A.
+    Physical address of PDE: 0x0045d9fc
+    Physcal address of PTE: 0x0df2a4a0
+    FAILURE: The physical address of the table entry causing the failure is
+    0x0df2a4a0
+
+B.
+    TLB Hit: Physical address is 0x98f8a2c0
+
+C.
+    Physical address of PDE: 0x0045d0a0
+    Physical address of PTE: 0x000c3cbc
+    SUCCESS: The physical address accessed is 0x34abdcd0
+
+
+**********
+Problem 13
+**********
+
+A.
+    When multiple requests arrive at once and the proxy has to spend a lot of
+    time blocking on the network
+
+B.
+    When each request does not arrive until the proxy had time to finish
+    processing the previous request

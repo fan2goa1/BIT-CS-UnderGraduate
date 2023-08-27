@@ -1,0 +1,53 @@
+# 1120200822 郑子帆
+
+# Execution begins at address 0
+    .pos 0
+    irmovq stack, %rsp
+    call main
+    halt
+
+# Sample linked list
+.align 8 
+# Source block 
+src: 
+	.quad 0x00a 
+	.quad 0x0b0 
+	.quad 0xc00 
+# Destination block 
+dest: 
+	.quad 0x111 
+	.quad 0x222 
+	.quad 0x333
+	
+main: 
+	irmovq src, %rdi
+    irmovq dest, %rsi
+    irmovq $3, %rdx
+    call copy_block
+    ret
+
+# long copy_block(long *src, long *dest, long len)
+# src in %rdi
+# dest in %rsi
+# len in %rdx
+copy_block:
+	irmovq $1, %r8
+	irmovq $8, %r9
+	xorq %rax, %rax		# clean %rax
+	jmp test
+
+loop:
+	mrmovq (%rdi), %r10
+	rmmovq %r10, (%rsi)
+	addq %r9, %rdi
+	addq %r9, %rsi
+	xorq %r10, %rax
+	subq %r8, %rdx
+
+test:
+	andq %rdx, %rdx
+	jne loop
+	ret
+
+	.pos 0x200
+stack:

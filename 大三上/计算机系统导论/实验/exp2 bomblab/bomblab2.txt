@@ -1,0 +1,32 @@
+phase_2(rbx)
+rsp = rsp - 0x20
+rax = %fs:0x28
+*(0x18 + rsp) = rax
+eax = 0
+rsi = rsp
+call read_six_number
+
+if(*rsp < 0){
+	call explode_bomb
+}
+ebx = 0x1
+1:eax = ebx
+eax += *(rsp + 4*ebx-0x4)
+if(eax == *(rsp + 4 * rbx)){
+	rbx += 0x1
+	if(rbx == 0x6){
+		rax = rsp + 0x18
+		rax ^= 0x28
+		if(rax != 0) call __stack_chk_fail
+		else {
+			rsp += 0x20
+			return 
+		}
+	}
+	else {
+		goto 1
+	}
+}
+else call explode_bomb
+
+add %rbx同时会add %ebx
