@@ -1,0 +1,26 @@
+hadoop fs -rm -r /hbase	彻底删除HBase数据
+stop-all.sh
+rm -r /usr/local/hadoop/app/hadoop/data/tmp
+hdfs namenode -format
+start-dfs.sh
+start-hbase.sh
+hdfs dfs -mkdir -p /user/sadgde
+hdfs dfs -put /home/sadgde/Desktop/input
+hbase shell
+create 'word','count'
+hadoop jar /home/sadgde/Desktop/InvertedIndex-3/out/artifacts/InvertedIndex_jar/InvertedIndex.jar  input
+
+
+
+org.apache.hadoop.mapreduce.task.reduce.Shuffle error in shuffle in fetcher#1
+https://blog.csdn.net/mulangren1988/article/details/75371130
+https://my.oschina.net/duanvincent/blog/3232477
+
+********map100% reduce0%&error in shuffle in localfetcher#1
+https://blog.csdn.net/qq_42568323/article/details/115436241?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522166383587116782425122443%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=166383587116782425122443&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-115436241-null-null.142^v50^new_blog_pos_by_title,201^v3^control_2&utm_term=error%20in%20shuffle%20in%20localfetcher%231&spm=1018.2226.3001.4187
+
+org.apache.hadoop.util.DiskChecker$DiskErrorException Could not find any valid local directory for
+http://wjhsh.net/codeOfLife-p-5940633.html
+https://www.jianshu.com/p/e50307229c68
+
+
