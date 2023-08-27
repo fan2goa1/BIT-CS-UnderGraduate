@@ -1,0 +1,2 @@
+﻿BigNumMul.obj : warning LNK4258: 指令“/ENTRY:main@0”与开关“/ENTRY:main”不兼容；已忽略
+  BigNumMul.vcxproj -> C:\Users\steve\Desktop\2022-2023\2022-2023-1\汇编语言与接口技术\实验\大数相乘\Debug\BigNumMul.exe
