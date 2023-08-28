@@ -1,0 +1,71 @@
+
+//--------------------------递归原程序
+
+bool knap(int s,int n){
+   if (0 == s) return true;
+   if ( (s<0) || ( s>0 && n<1) )  return false;
+   if (knap(s-wn-1,n-1)) {
+          cout << w[n-1];
+	 return true;
+   } else return knap(s,n-1);
+   ；
+}
+
+
+
+//---------------------------非递归程序
+
+
+Stack<knapNode> stack;
+KnapNode temp,x;
+bool knap(int s,int n){
+
+     //整个函数的入口处
+	 temp.s = s; temp.n = n; temp.rd = 0;
+	 stack.push(temp);
+	 
+	 lable0:
+	    stack.pop(&temp);
+		if (0 == temp.s ) {
+		   temp.k = true;
+		   stack.push(temp);
+		   goto label3;
+		}
+        if ((temp.s<0) || ( temp.s>0 && temp.n<1)  ) {
+		   temp.k = false;
+		   stack.push(temp);
+		   goto label3;
+		}
+        stack.push(temp);
+		// 第1个入口
+        x.s = temp.s - w[temp.n - 1];
+		x.n = temp.n - 1;
+		x.rd = 1;
+		stack.push(x);
+		goto Lable0;
+	 label1:
+	    stack.pop(&x);
+		if (temp.k == true) {
+		    x.k =true;
+			stack.push(x);
+			cout << w[x.n-1] << endl;
+			goto label3;
+		}
+        stack.push(x);
+        temp.s=x.s		
+		temp.n=x.n-1;
+		temp.rd = 2;
+		stack.push(temp);
+		goto label0;
+	 label2:
+        stack.pop(&x);
+        x.k = temp.k;		
+		stack.push(x);
+	 label3:
+        stack.push(&temp);
+        switch(temp.rd) {
+		   case 0: return temp.k;
+		   case 1: goto label1;
+		   case 2: goto label2;
+		}		
+}
