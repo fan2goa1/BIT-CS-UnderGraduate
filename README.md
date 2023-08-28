@@ -20,7 +20,7 @@
 ## 大二上
 ![21-22-1.png](https://s2.loli.net/2023/08/26/VXak1Aq5eEbIiNz.png)
 
-[大二上课程及资料介绍]()
+[大二上课程及资料介绍](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/%E5%A4%A7%E4%BA%8C%E4%B8%8A)
 
 ## 大二下
 ![21-22-2.png](https://s2.loli.net/2023/08/26/5FEfNLPA2uaxSsm.png)
