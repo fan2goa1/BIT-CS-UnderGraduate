@@ -25,7 +25,7 @@
 ## 大二下
 ![21-22-2.png](https://s2.loli.net/2023/08/26/5FEfNLPA2uaxSsm.png)
 
-[大二下课程及资料介绍]()
+[大二下课程及资料介绍](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/%E5%A4%A7%E4%BA%8C%E4%B8%8B)
 
 ## 大三上
 ![22-23-1.png](https://s2.loli.net/2023/08/26/TtoiW2KC9RkyUjq.png)
