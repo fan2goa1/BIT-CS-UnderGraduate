@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/bit.jpg">
+</head>
+<body>
+    <div class="menu" id="#top">
+        <ul>
+            <li>
+                <a href="./index.html">首页</a>
+            </li>
+            <li>
+                <a href="#top">个人简介</a>
+                <ul>
+                    <li><a href="./html/introduction/profile.html">个人信息</a></li>
+                    <li><a href="./html/introduction/classes-1.html">大一课程</a></li>
+                    <li><a href="./html/introduction/classes-2.html">大二课程</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#top">兴趣爱好</a>
+                <ul>
+                    <li><a href="./html/hobbies/movies.html">最喜欢的电影</a></li>
+                    <li><a href="./html/hobbies/music.html">最喜欢的音乐</a></li>
+                    <li><a href="./html/hobbies/books.html">最喜欢的书籍</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#top">其他</a>
+                <ul>
+                    <li><a href="/html/others/学习心得/心得.html">学习心得</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-top: 80px; margin-left: 150px; margin-right: 150px;">
+        <p style="text-indent: 0em;">
+            1 A+B (I)
+            <br>
+            这道题就是一个二进制的高精度加法，注意一下进位的问题。然后这道题输出答案的时候-的个数是ans的长度+2。对于多组询问，一定注意之前数组的值不要对当前询问产生影响，最好memset初始化一下。
+            <br><br>
+            2 解谜游戏
+            <br>
+            这道题显然可以得知每个点最多被按一次，且按的顺序对最终结果没有任何影响，所以说我们可以$2^m$​暴力枚举第一行的操作状态，然后之后对于第i行的亮暗状态(0/1)，我们可以得知第i+1行的操作，使得前i行全暗（0）（例如，第i行第j列是1，那么我们对第i+1行第j列要按一次，使得其变为0），然后最后注意判断第n行是否全0然后更新一下ans。
+            <br><br>
+            3 军训日记
+            <br>
+            1~n中，含质因数2的数的个数最多，然后我们肯定是要让它们分散开来，这样要分​$\lfloor \frac{n}{2} \rfloor$个集合（1可以扔到任意一个集合中），然后对于之后的奇合数，由于相邻两数互质，将其扔到比它小1的偶数的集合中即可。注意n=1的时候要特判一下。
+            <br><br>
+            4 北湖挖坑
+            <br>
+            这个好像就是noip2018的某个t1原题，我们把它倒过来，想象成对每个位置建一个高度为b[i] = h-a[i]的山。那么考虑贪心。对于当前第i位，考虑i-1填完后，为了填满i位置，要单独再填多少次。若i-1位置的高度 &< i位置要建的高度，那么将二者的高度差累加到答案中。这样做法的正确性我们可以考虑如果b[i-1]=b[i]，那么二者可以捆绑看成一个位置，一起被填；若b[i-1]>b[i]那么我们就认为是在达到b[i]高度前二者被捆绑在一起被填，然后当到了高度b[i]，舍弃i位置，i-1位置继续填；若b[i-1] b[i]，那么我们填到b[i-1]高度时，i位置要单独再花b[i]-b[i-1]次填满。注意开long long
+            <br><br>
+            5 北湖深坑
+            <br>
+            这道题我们考虑对于第i个位置，能装多少水。易知对于当前位置，它能装的最大的高度就是它左边的最高高度和右边的最高高度取min，不然装的更多会从一侧溢出。所以我们O(n)扫一遍得到每个位置左边的最大高度和右边的最大高度。还是注意开long long统计答案
+        </p>
+    </div>
+    <p align="center" style="letter-spacing: 1px; font-size: 15px; margin-bottom: 50px; margin-top: 60px;">
+        &copy; copyright2021 版权所有
+    </p>
+</body>
+</html>

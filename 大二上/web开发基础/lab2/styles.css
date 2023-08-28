@@ -1,0 +1,151 @@
+body{
+    background: url(./images/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+h1{
+    font-family: "Lucida Handwriting", 宋体;
+}
+h2{
+    font-family: 仿宋;
+}
+li{
+    font-size: larger;
+}
+
+p{
+    font-family: 宋体;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-indent: 2em;
+}
+
+div{
+    line-height: 2.5em;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* 
+    将图片位于居中
+*/
+.centered{
+    text-align: center;
+}
+
+/*
+    图片超链接
+*/
+.movie img{
+    opacity: 0.7;
+    margin: 20px;
+}
+.movie img:hover{
+    opacity: 1.0;
+}
+
+/*
+    图片与文本中央对齐
+*/
+.v1{vertical-align: middle;}
+
+/*
+    图片环绕文本左边
+*/
+.s1{float: left; margin-right: 30px;}
+
+
+/*
+    超链接制作
+*/
+a:link{color: black; text-decoration: none;}
+a:visited{color: gray; text-decoration: none;}
+a:hover{color: red; text-decoration: none;}
+a:active{color:gray; text-decoration: none;}
+
+/*
+    横向导航栏
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.menu{
+    font-family: 楷体;
+    position: fixed;
+    width: 600px;
+    height: 48px;
+    background-color: #e8e7e3;
+    opacity: 0.8;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.menu ul{
+    list-style: none;
+}
+.menu ul li{
+    float: left;
+    position: relative;
+}
+.menu ul li a, .menu ul li a:visited{
+    text-align: center;
+    line-height: 48px;
+    display: block;
+    text-decoration: none;
+    color: #777777;
+    font-size: 18px;
+    width: 150px;
+    /* padding: 0 40px; */
+}
+.menu ul li ul{
+    display: none;
+}
+.menu ul li:hover a{
+    background-color: #3f3f3f;
+    color: #e8e7e3;
+}
+.menu ul li:hover ul{
+    display: block;
+    position: absolute;
+    top: 48px;
+    left: 0px;
+}
+.menu ul li:hover ul li a{
+    display: block;
+    background-color: #e8e7e3;
+    color: #777777;
+}
+.menu ul li:hover ul li a:hover{
+    background-color: #3f3f3f;
+    color: #e8e7e3;
+}
+
+/*
+    关于table表格
+*/
+.tb1{
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 5px 5px;
+}
+.tb1 tr td{
+    border-left: 1px solid black;
+    padding: 10px;
+    width: 100px;
+}
+/*
+    音乐页的操作
+*/
+.music ul li ul li{
+    font-size: smaller;
+}
+.music ul li ul{
+    margin-left: 20px;
+    line-height: 1.5em;
+}

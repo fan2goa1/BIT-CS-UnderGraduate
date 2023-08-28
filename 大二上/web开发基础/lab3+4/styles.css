@@ -1,0 +1,100 @@
+body{
+    background: url(./images/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+/*
+    字体调整
+*/
+h1{
+    font-family: 宋体;
+    font-size: 40px;
+}
+h2{
+    font-family: 宋体;
+    font-size: 30px;
+}
+p{
+    font-family: 宋体;
+    font-size: 25px;
+    text-indent: 2em;
+}
+label{
+    font-family: 仿宋;
+    font-size: 20px;
+}
+
+/*
+    超链接效果调整
+*/
+a:link{color: black; text-decoration: none;}
+a:visited{color: gray; text-decoration: none;}
+a:hover{color: red; text-decoration: none;}
+a:active{color:gray; text-decoration: none;}
+
+
+
+/*
+    弹窗
+*/
+.btn-pop{
+    background-color: #ffd475;  
+    border-radius: 10px;
+    border:0px;
+    zoom:200%;
+}
+#background-pop{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+#div-pop{
+    background:#ffffff;
+    width:30%;
+    z-index: 1;
+    margin: 12% auto;
+    overflow: auto;
+}
+#close-button{
+    margin-right: 12px;
+    margin-top: 4px;
+}
+.div-top{
+    width: 100%;
+    height: auto;
+    background-color: #28a3e7;
+    color: #ffffff;
+}
+.div-top div{
+    padding: 3px 5px 5px 8px;
+}
+div div div span{
+    color: white;
+    margin-bottom: 10px ;
+    margin-left: 20px ;
+    cursor: pointer;
+    float: right;
+}
+.div-content{
+    width: auto;
+    height: 200px;
+    overflow: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 2em;
+}
+.div-footer{
+    text-align: center;
+    background-color: darkgray;
+}
+
+
+#myrk{
+    display: none;
+}
