@@ -10,7 +10,7 @@
 ## 大一上
 ![20-21-1课程安排](https://s2.loli.net/2023/08/26/Yx35MpNO9EzPWtI.png)
 
-[大一上课程及资料介绍]()
+[大一上课程及资料介绍](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/%E5%A4%A7%E4%B8%80%E4%B8%8A)
 
 ## 大一下
 ![20-21-2.png](https://s2.loli.net/2023/08/26/RN7AEqmSpW13Bch.png)
