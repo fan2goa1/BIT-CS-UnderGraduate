@@ -1,0 +1,6 @@
+﻿  Assembling test.asm...
+test.asm(137): warning A6004: procedure argument or local not referenced : tmp1
+test.asm(137): warning A6004: procedure argument or local not referenced : tmp2
+test.asm(137): warning A6004: procedure argument or local not referenced : tmp5
+test.asm(137): warning A6004: procedure argument or local not referenced : tmp12
+  ncgen.vcxproj -> C:\Users\steve\Desktop\Compiler\labs\lab8\ncgen\ncgen\Debug\ncgen.exe
