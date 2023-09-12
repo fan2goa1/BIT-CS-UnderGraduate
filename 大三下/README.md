@@ -7,14 +7,14 @@
 
 对于这门课，主要就是从物理层讲起，按照TCP/IP模型从底层向顶层学习，每章内容都会考到，都很重要，相比之下物理层可能less important一些，但其他的都是很基础很重要的内容。
 
-如果听不懂老师的讲课(大概率)，建议直接看英文，不要学一遍中文再背英文名刺，推荐[Stanford的Introduction to computer networking](https://www.scs.stanford.edu/10au-cs144/)，很多github仓库都有这些课的学习笔记，适合自学。自学过后尽量把参考教材上有答案的(一般都是基础经典题)的题都做一遍。学有余力的话买一本王道，无聊的时候或者考前的时候刷完它。主要做大题，这门课考察更多的是综合掌握应用，而不是概念选择这种。
+如果听不懂老师的讲课(大概率)，建议直接看英文，不要学一遍中文再背英文名刺，推荐[Stanford的Introduction to computer networking](https://cs144.github.io/)，很多github仓库都有这些课的学习笔记，适合自学。自学过后尽量把参考教材上有答案的(一般都是基础经典题)的题都做一遍。学有余力的话买一本王道，无聊的时候或者考前的时候刷完它。主要做大题，这门课考察更多的是综合掌握应用，而不是概念选择这种。
 
 ### 📌资料分享
 本课使用的参考教材有三本，分别为 _Computer Networks: A System Approch 3rd Edition_, _Computer Networks(Fifth Edition)_, _Computer Networking: A Top Down Approach_。23年计网的作业题都来自这三本教材章后习题。教材的电子版和部分习题解答的pdf都在 _textbook_ 文件夹中。
 
 _assignment_ 文件夹中为每章作业和我的作答答案(里面应该有错，仅供参考)。
 
-_labs_ 文件夹中为我的configuration lab和programming lab资料。
+_labs_ 文件夹中为我的configuration lab和programming lab资料。其中**Go-back-N**的实验我放在了[另一个仓库](https://github.com/fan2goa1/Go-back-N-protocol)。
 
 _slide_ 文件夹中为郑宏老师的ppt。
 
@@ -27,8 +27,11 @@ _thesis_ 文件夹为我写的课程论文，题目主题为Blockchain and Crypt
 
 ## 机器学习初步
 ### 🏷️课程内容
+这门课比较基础，内容不多，速度偏慢。参考教材是周志华的西瓜书。
 
+大作业只有一个，手写Decision Tree，然后需要完成配套的mooc，整体比较轻松。
 ### 📌资料分享
+这门课唯一的大作业我放在了[这个仓库](https://github.com/fan2goa1/ML-DecisionTree)，供参考。
 
 ### 💯课程成绩
 23年春季郭宇航老师该课70%大作业+30%mooc，最高分98，均分90.114。
