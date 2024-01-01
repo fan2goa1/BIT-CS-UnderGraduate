@@ -1,6 +1,7 @@
 # BIT Computer Science and Technology
-![GitHub repo size](https://img.shields.io/github/repo-size/fan2goa1/BIT-CS-UnderGraduate.svg?style=social)
 ## 👀About this repo
+![GitHub repo size](https://img.shields.io/github/repo-size/fan2goa1/BIT-CS-UnderGraduate.svg?style=social)
+
 这个仓库用于存放我在BITCS四年的课程资料与心得。供学弟学妹参考。
 
 我是20级信息科学技术专业的学生，在大一结束后进行了专业分流，去到了计算机科学与技术专业。在三年的学习中也参考的很多前辈的学习经验和资料，最后完成并总结出一些自己的内容。
