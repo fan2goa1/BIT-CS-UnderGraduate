@@ -11,13 +11,13 @@
 
 | 学期   | 课程名称                                                     | 学分 | 考核方式 | 课程属性 | 往年试卷           | 作业(实验)答案     | 课件               |
 | ------ | ------------------------------------------------------------ | ---- | -------- | -------- | ------------------ | ------------------ | ------------------ |
-| 大一上 | 大学计算机基础                                               | 2    | 考试     | 必修     | :white_check_mark: | :white_check_mark: |                    |
-|        | 工程制图C                                                    | 2    | 考试     | 必修     | :white_check_mark: | :white_check_mark: |                    |
-|        | 工科数学分析 I                                               | 6    | 考试     | 必修     | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-|        | 思修                                                         | 3    | 考查*    | 必修     |                    | :white_check_mark: |                    |
-|        | 习概                                                         | 2    | 考查     | 必修     |                    | :white_check_mark: |                    |
-|        | 线性代数B                                                    | 3    | 考试     | 必修     | :white_check_mark: |                    | :white_check_mark: |
-|        | 学术用途英语一级                                             | 3    | 考试     | 必修     |                    |                    |                    |
+| 大一上 | [大学计算机基础](https://github.com/fan2goa1/BIT-CS-UnderGraduate/blob/main/大一上/README.md#大学计算机基础) | 2    | 考试     | 必修     | :white_check_mark: | :white_check_mark: |                    |
+|        | [工程制图C](https://github.com/fan2goa1/BIT-CS-UnderGraduate/blob/main/大一上/README.md#工程制图c) | 2    | 考试     | 必修     | :white_check_mark: | :white_check_mark: |                    |
+|        | [工科数学分析 I](https://github.com/fan2goa1/BIT-CS-UnderGraduate/blob/main/大一上/README.md#工科数学分析-i) | 6    | 考试     | 必修     | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+|        | [思修](https://github.com/fan2goa1/BIT-CS-UnderGraduate/blob/main/大一上/README.md#思想道德修养与法律基础) | 3    | 考查*    | 必修     |                    | :white_check_mark: |                    |
+|        | [习概](https://github.com/fan2goa1/BIT-CS-UnderGraduate/blob/main/大一上/README.md#习近平新时代中国特色社会主义思想概论) | 2    | 考查     | 必修     |                    | :white_check_mark: |                    |
+|        | [线性代数B](https://github.com/fan2goa1/BIT-CS-UnderGraduate/blob/main/大一上/README.md#线性代数b) | 3    | 考试     | 必修     | :white_check_mark: |                    | :white_check_mark: |
+|        | [学术用途英语一级](https://github.com/fan2goa1/BIT-CS-UnderGraduate/blob/main/大一上/README.md#学术用途英语一级) | 3    | 考试     | 必修     |                    |                    |                    |
 | 大一下 | 程序设计基础                                                 | 3    | 考试     | 必修     |                    |                    |                    |
 |        | 大学物理AI                                                   | 4    | 考试     | 必修     |                    |                    |                    |
 |        | 电路分析基础                                                 | 4    | 考试     | 必修     |                    |                    |                    |
