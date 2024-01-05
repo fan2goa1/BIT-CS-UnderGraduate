@@ -18,11 +18,11 @@
 |        | [习概](https://github.com/fan2goa1/BIT-CS-UnderGraduate/blob/main/大一上/README.md#习近平新时代中国特色社会主义思想概论) | 2    | 考查     | 必修     |                    | :white_check_mark: |                    |
 |        | [线性代数B](https://github.com/fan2goa1/BIT-CS-UnderGraduate/blob/main/大一上/README.md#线性代数b) | 3    | 考试     | 必修     | :white_check_mark: |                    | :white_check_mark: |
 |        | [学术用途英语一级](https://github.com/fan2goa1/BIT-CS-UnderGraduate/blob/main/大一上/README.md#学术用途英语一级) | 3    | 考试     | 必修     |                    |                    |                    |
-| 大一下 | 程序设计基础                                                 | 3    | 考试     | 必修     |                    |                    |                    |
-|        | 大学物理A I                                                   | 4    | 考试     | 必修     |                    |                    |                    |
-|        | 电路分析基础                                                 | 4    | 考试     | 必修     |                    |                    |                    |
-|        | 物理实验B I                                                   | 1    | 考查     | 必修     |                    |                    |                    |
-|        | 学术用途英语二级                                             | 3    | 考试     | 必修     |                    |                    |                    |
+| 大一下 | [程序设计基础](https://github.com/fan2goa1/BIT-CS-UnderGraduate/blob/main/大一下/README.md#程序设计基础) | 3    | 考试     | 必修     |                    |                    |                    |
+|        | [大学物理A I](https://github.com/fan2goa1/BIT-CS-UnderGraduate/blob/main/大一下/README.md#大学物理a-i) | 4    | 考试     | 必修     |                    |                    |                    |
+|        | [电路分析基础](https://github.com/fan2goa1/BIT-CS-UnderGraduate/blob/main/大一下/README.md#电路分析基础) | 4    | 考试     | 必修     |                    |                    |                    |
+|        | [物理实验B I](https://github.com/fan2goa1/BIT-CS-UnderGraduate/blob/main/大一下/README.md#物理实验b-i) | 1    | 考查     | 必修     |                    |                    |                    |
+|        | [学术用途英语二级](https://github.com/fan2goa1/BIT-CS-UnderGraduate/blob/main/大一下/README.md#学术用途英语二级) | 3    | 考试     | 必修     |                    |                    |                    |
 |        | 中国近现代史纲要                                             | 3    | 考试     | 必修     |                    |                    |                    |
 | 大二上 | [Web开发基础](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/大二上#程序设计方法与实践) | 1    | 考查     | 必修     |                    | :white_check_mark: | :white_check_mark: |
 |        | [程序设计方法与实践](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/大二上#程序设计方法与实践) | 1    | 机试     | 必修     |                    | :white_check_mark: |                    |
