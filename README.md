@@ -19,20 +19,20 @@
 |        | [线性代数B](https://github.com/fan2goa1/BIT-CS-UnderGraduate/blob/main/大一上/README.md#线性代数b) | 3    | 考试     | 必修     | :white_check_mark: |                    | :white_check_mark: |
 |        | [学术用途英语一级](https://github.com/fan2goa1/BIT-CS-UnderGraduate/blob/main/大一上/README.md#学术用途英语一级) | 3    | 考试     | 必修     |                    |                    |                    |
 | 大一下 | 程序设计基础                                                 | 3    | 考试     | 必修     |                    |                    |                    |
-|        | 大学物理AI                                                   | 4    | 考试     | 必修     |                    |                    |                    |
+|        | 大学物理A I                                                   | 4    | 考试     | 必修     |                    |                    |                    |
 |        | 电路分析基础                                                 | 4    | 考试     | 必修     |                    |                    |                    |
-|        | 物理实验BI                                                   | 1    | 考查     | 必修     |                    |                    |                    |
+|        | 物理实验B I                                                   | 1    | 考查     | 必修     |                    |                    |                    |
 |        | 学术用途英语二级                                             | 3    | 考试     | 必修     |                    |                    |                    |
 |        | 中国近现代史纲要                                             | 3    | 考试     | 必修     |                    |                    |                    |
 | 大二上 | [Web开发基础](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/大二上#程序设计方法与实践) | 1    | 考查     | 必修     |                    | :white_check_mark: | :white_check_mark: |
 |        | [程序设计方法与实践](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/大二上#程序设计方法与实践) | 1    | 机试     | 必修     |                    | :white_check_mark: |                    |
-|        | [大学物理AII](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/大二上#大学物理aⅱ) | 4    | 考试     | 必修     |                    |                    |                    |
+|        | [大学物理A II](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/大二上#大学物理aⅱ) | 4    | 考试     | 必修     |                    |                    |                    |
 |        | [概率论与数理统计](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/大二上#概率与数理统计) | 3    | 考试     | 必修     | :white_check_mark: |                    |                    |
 |        | [离散数学](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/大二上#离散数学) | 4    | 考试     | 必修     |                    |                    |                    |
 |        | [马原](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/大二上#大学物理aⅱ) | 3    | 考试     | 必修     |                    |                    |                    |
 |        | [数据结构与算法设计](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/大二上#数据结构与算法设计) | 5    | 考试     | 必修     | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 |        | [数值分析](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/大二上#数值分析) | 2    | 考试     | 必修     |                    |                    |                    |
-|        | [物理实验BII](https://github.com/fan2goa1/BIT-CS-UnderGraduate/blob/main/大二上/README.md#物理实验b-ii) | 1    | 考查     | 必修     |                    |                    |                    |
+|        | [物理实验B II](https://github.com/fan2goa1/BIT-CS-UnderGraduate/blob/main/大二上/README.md#物理实验b-ii) | 1    | 考查     | 必修     |                    |                    |                    |
 | 大二下 | 毛概                                                         | 3    | 考查*    | 必修     |                    |                    |                    |
 |        | 面向对象方法                                                 | 2.5  | 考试     | 必修     |                    |                    |                    |
 |        | 人机交互                                                     | 2    | 考试     | 选修     |                    |                    |                    |
