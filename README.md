@@ -18,8 +18,8 @@
 |        | [习概](https://github.com/fan2goa1/BIT-CS-UnderGraduate/blob/main/大一上/README.md#习近平新时代中国特色社会主义思想概论) | 2    | 考查     | 必修     |                    | :white_check_mark: |                    |
 |        | [线性代数B](https://github.com/fan2goa1/BIT-CS-UnderGraduate/blob/main/大一上/README.md#线性代数b) | 3    | 考试     | 必修     | :white_check_mark: |                    | :white_check_mark: |
 |        | [学术用途英语一级](https://github.com/fan2goa1/BIT-CS-UnderGraduate/blob/main/大一上/README.md#学术用途英语一级) | 3    | 考试     | 必修     |                    |                    |                    |
-| 大一下 | [程序设计基础](https://github.com/fan2goa1/BIT-CS-UnderGraduate/blob/main/大一下/README.md#程序设计基础) | 3    | 考试     | 必修     |                    | :white_check_mark: |                    |
-|        | [大学物理A I](https://github.com/fan2goa1/BIT-CS-UnderGraduate/blob/main/大一下/README.md#大学物理a-i) | 4    | 考试     | 必修     | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| 大一下 | [程序设计基础](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/大一下/README.md#程序设计基础) | 3    | 考试     | 必修     |                    | :white_check_mark: |                    |
+|        | [大学物理A I](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/大一下/README.md#大学物理a-i) | 4    | 考试     | 必修     | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 |        | [电路分析基础](https://github.com/fan2goa1/BIT-CS-UnderGraduate/blob/main/大一下/README.md#电路分析基础) | 4    | 考试     | 必修     |                    |                    | :white_check_mark: |
 |        | [物理实验B I](https://github.com/fan2goa1/BIT-CS-UnderGraduate/blob/main/大一下/README.md#物理实验b-i) | 1    | 考查     | 必修     |                    | :white_check_mark: |                    |
 |        | [学术用途英语二级](https://github.com/fan2goa1/BIT-CS-UnderGraduate/blob/main/大一下/README.md#学术用途英语二级) | 3    | 考试     | 必修     |                    |                    | :white_check_mark: |
@@ -32,16 +32,16 @@
 |        | [马原](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/大二上#大学物理aⅱ) | 3    | 考试     | 必修     |                    |                    |                    |
 |        | [数据结构与算法设计](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/大二上#数据结构与算法设计) | 5    | 考试     | 必修     | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 |        | [数值分析](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/大二上#数值分析) | 2    | 考试     | 必修     |                    |                    |                    |
-|        | [物理实验B II](https://github.com/fan2goa1/BIT-CS-UnderGraduate/blob/main/大二上/README.md#物理实验b-ii) | 1    | 考查     | 必修     |                    |                    |                    |
-| 大二下 | 毛概                                                         | 3    | 考查*    | 必修     |                    |                    |                    |
-|        | 面向对象方法                                                 | 2.5  | 考试     | 必修     |                    |                    |                    |
-|        | 人机交互                                                     | 2    | 考试     | 选修     |                    |                    |                    |
-|        | 深度学习基础                                                 | 2    | 考查     | 选修     |                    |                    |                    |
-|        | 数据库原理与设计                                             | 3    | 考试     | 必修     |                    |                    |                    |
-|        | 数字逻辑                                                     | 2.5  | 考试     | 必修     |                    |                    |                    |
-|        | 算法博弈论                                                   | 2    | 考查     | 选修     |                    | :white_check_mark: | :white_check_mark: |
-|        | 知识工程                                                     | 2    | 考查     | 选修     |                    |                    |                    |
-|        | 最优化方法                                                   | 2    | 考查     | 选修     |                    | :white_check_mark: | :white_check_mark: |
+|        | [物理实验B II](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/大二上/README.md#物理实验b-ii) | 1    | 考查     | 必修     |                    |                    |                    |
+| 大二下 | [毛概](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/大二下#毛概) | 3    | 考查*    | 必修     |                    |                    | :white_check_mark: |
+|        | [面向对象方法](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/大二下#-面向对象方法) | 2.5  | 考试     | 必修     | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+|        | [人机交互](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/大二下#人机交互) | 2    | 考查     | 选修     |                    | :white_check_mark: | :white_check_mark: |
+|        | [深度学习基础](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/大二下#深度学习基础) | 2    | 考查     | 选修     |                    | :white_check_mark: | :white_check_mark: |
+|        | [数据库原理与设计](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/大二下#数据库原理与设计) | 3    | 考试     | 必修     | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+|        | [数字逻辑](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/大二下#数字逻辑) | 2.5  | 考试     | 必修     |                    | :white_check_mark: | :white_check_mark: |
+|        | [算法博弈论](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/大二下#-算法博弈论) | 2    | 考查     | 选修     |                    | :white_check_mark: | :white_check_mark: |
+|        | [知识工程](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/大二下#知识工程) | 2    | 考查     | 选修     |                    | :white_check_mark: | :white_check_mark: |
+|        | [最优化方法](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/大二下#-最优化方法) | 2    | 考查     | 选修     |                    | :white_check_mark: | :white_check_mark: |
 | 大三上 | [操作系统](https://github.com/fan2goa1/BIT-CS-UnderGraduate/tree/main/大三上#操作系统) | 3    | 考试     | 必修     | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 |        | [大数据系统开发](https://github.com/fan2goa1/BIT-CS-UnderGraduate/blob/main/大三上/README.md#计算机专业基础实习) | 1    | 考试     | 必修     | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 |        | [汇编语言与接口技术](https://github.com/fan2goa1/BIT-CS-UnderGraduate/blob/main/大三上/README.md#计算机系统导论) | 3    | 考试     | 必修     | :white_check_mark: | :white_check_mark: | :white_check_mark: |
