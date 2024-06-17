@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Sep  8 00:08:14 2023
+# Process ID: 45188
+# Current directory: C:/Users/steve/Desktop/cpu/cpu.runs/synth_1
+# Command line: vivado.exe -log cpu_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cpu_top.tcl
+# Log file: C:/Users/steve/Desktop/cpu/cpu.runs/synth_1/cpu_top.vds
+# Journal file: C:/Users/steve/Desktop/cpu/cpu.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source cpu_top.tcl -notrace

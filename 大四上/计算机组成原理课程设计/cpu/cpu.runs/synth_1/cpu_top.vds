@@ -1,0 +1,804 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Sep  8 00:08:14 2023
+# Process ID: 45188
+# Current directory: C:/Users/steve/Desktop/cpu/cpu.runs/synth_1
+# Command line: vivado.exe -log cpu_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cpu_top.tcl
+# Log file: C:/Users/steve/Desktop/cpu/cpu.runs/synth_1/cpu_top.vds
+# Journal file: C:/Users/steve/Desktop/cpu/cpu.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source cpu_top.tcl -notrace
+Command: synth_design -top cpu_top -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 44908 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 961.414 ; gain = 233.500
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cpu_top' [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/cpu_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pc_reg' [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/pc_reg.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'pc_reg' (1#1) [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/pc_reg.v:24]
+INFO: [Synth 8-6157] synthesizing module 'if_id' [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/if_id.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'if_id' (2#1) [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/if_id.v:24]
+INFO: [Synth 8-6157] synthesizing module 'id' [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/id.v:24]
+WARNING: [Synth 8-151] case item 6'b001101 is unreachable [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/id.v:100]
+INFO: [Synth 8-6155] done synthesizing module 'id' (3#1) [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/id.v:24]
+INFO: [Synth 8-6157] synthesizing module 'regs' [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/regs.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'regs' (4#1) [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/regs.v:24]
+INFO: [Synth 8-6157] synthesizing module 'id_ex' [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/id_ex.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'id_ex' (5#1) [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/id_ex.v:24]
+INFO: [Synth 8-6157] synthesizing module 'ex' [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/ex.v:24]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/alu.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (6#1) [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/alu.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'ex' (7#1) [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/ex.v:24]
+INFO: [Synth 8-6157] synthesizing module 'ex_mem' [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/ex_mem.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'ex_mem' (8#1) [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/ex_mem.v:24]
+INFO: [Synth 8-6157] synthesizing module 'mem' [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/mem.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'mem' (9#1) [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/mem.v:24]
+INFO: [Synth 8-6157] synthesizing module 'mem_wb' [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/mem_wb.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'mem_wb' (10#1) [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/mem_wb.v:24]
+INFO: [Synth 8-6157] synthesizing module 'stall_control' [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/stall_control.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'stall_control' (11#1) [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/stall_control.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_top' (12#1) [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/cpu_top.v:23]
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_we[3] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_we[2] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_we[1] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_we[0] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_addr[31] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_addr[30] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_addr[29] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_addr[28] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_addr[27] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_addr[26] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_addr[25] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_addr[24] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_addr[23] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_addr[22] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_addr[21] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_addr[20] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[31] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[30] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[29] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[28] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[27] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[26] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[25] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[24] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[23] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[22] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[21] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[20] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[19] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[18] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[17] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[16] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[15] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[14] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[13] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[12] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[11] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[10] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[9] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[8] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[7] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[6] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[5] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[4] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[3] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[2] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[1] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[0] driven by constant 0
+WARNING: [Synth 8-3331] design mem_wb has unconnected port stall[3]
+WARNING: [Synth 8-3331] design mem_wb has unconnected port stall[2]
+WARNING: [Synth 8-3331] design mem_wb has unconnected port stall[1]
+WARNING: [Synth 8-3331] design mem_wb has unconnected port stall[0]
+WARNING: [Synth 8-3331] design ex_mem has unconnected port stall[5]
+WARNING: [Synth 8-3331] design ex_mem has unconnected port stall[2]
+WARNING: [Synth 8-3331] design ex_mem has unconnected port stall[1]
+WARNING: [Synth 8-3331] design ex_mem has unconnected port stall[0]
+WARNING: [Synth 8-3331] design ex has unconnected port rst
+WARNING: [Synth 8-3331] design id_ex has unconnected port stall[5]
+WARNING: [Synth 8-3331] design id_ex has unconnected port stall[4]
+WARNING: [Synth 8-3331] design id_ex has unconnected port stall[1]
+WARNING: [Synth 8-3331] design id_ex has unconnected port stall[0]
+WARNING: [Synth 8-3331] design if_id has unconnected port stall[5]
+WARNING: [Synth 8-3331] design if_id has unconnected port stall[4]
+WARNING: [Synth 8-3331] design if_id has unconnected port stall[3]
+WARNING: [Synth 8-3331] design if_id has unconnected port stall[0]
+WARNING: [Synth 8-3331] design pc_reg has unconnected port stall[5]
+WARNING: [Synth 8-3331] design pc_reg has unconnected port stall[4]
+WARNING: [Synth 8-3331] design pc_reg has unconnected port stall[3]
+WARNING: [Synth 8-3331] design pc_reg has unconnected port stall[2]
+WARNING: [Synth 8-3331] design pc_reg has unconnected port stall[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1035.027 ; gain = 307.113
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1035.027 ; gain = 307.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1035.027 ; gain = 307.113
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1035.027 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led0[6]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led0[5]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led0[4]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led0[3]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led0[2]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led0[1]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk_fast'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk_fast'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'px1[3]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'px1[2]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'px1[1]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'px1[0]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'px0[3]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'px0[2]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'px0[1]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'px0[0]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1[6]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1[5]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1[4]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1[3]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1[2]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1[1]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1[0]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led0[6]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led0[5]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led0[4]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led0[3]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led0[2]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led0[1]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led0[0]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1[6]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1[5]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1[4]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1[3]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1[2]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1[1]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1[0]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led0[0]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'px0[0]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'px0[1]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'px0[2]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'px0[3]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'px1[3]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'px1[2]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'px1[1]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'px1[0]'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rst_rev'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rst_rev'. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/steve/Desktop/cpu/cpu.srcs/constrs_1/new/test_cpu.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1143.102 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1147.266 ; gain = 4.164
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1147.266 ; gain = 419.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1147.266 ; gain = 419.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1147.266 ; gain = 419.352
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "inst_type_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "alu_op_o" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "reg_we_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "branch_tag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "reg2_re_o" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5544] ROM "mem_we" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'reg1_re_o_reg' [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/id.v:71]
+WARNING: [Synth 8-327] inferring latch for variable 'reg2_re_o_reg' [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/id.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'reg1_addr_o_reg' [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/id.v:73]
+WARNING: [Synth 8-327] inferring latch for variable 'reg2_addr_o_reg' [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/id.v:74]
+WARNING: [Synth 8-327] inferring latch for variable 'imm_val_reg' [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/id.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_we_reg' [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/mem.v:53]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1147.266 ; gain = 419.352
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 3     
++---XORs : 
+	               32 Bit    Wide XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 42    
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 24    
+	   6 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 3     
+	  17 Input      5 Bit        Muxes := 2     
+	   3 Input      5 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 4     
+	  17 Input      4 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	  16 Input      2 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 3     
+	  17 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 68    
+	  17 Input      1 Bit        Muxes := 4     
+	  16 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pc_reg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module if_id 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+Module id 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	   6 Input     32 Bit        Muxes := 1     
+	  17 Input      5 Bit        Muxes := 2     
+	   3 Input      5 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 3     
+	  17 Input      4 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 1     
+	  16 Input      2 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 2     
+	  17 Input      2 Bit        Muxes := 1     
+	  17 Input      1 Bit        Muxes := 4     
+	  16 Input      1 Bit        Muxes := 4     
+Module regs 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 64    
+Module id_ex 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 3     
++---XORs : 
+	               32 Bit    Wide XORs := 1     
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+Module ex 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   3 Input     32 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+Module ex_mem 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module mem 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module mem_wb 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module stall_control 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/steve/Desktop/cpu/cpu.srcs/sources_1/new/alu.v:36]
+DSP Report: Generating DSP out3, operation Mode is: A*B.
+DSP Report: operator out3 is absorbed into DSP out3.
+DSP Report: operator out3 is absorbed into DSP out3.
+DSP Report: Generating DSP out3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator out3 is absorbed into DSP out3.
+DSP Report: operator out3 is absorbed into DSP out3.
+DSP Report: Generating DSP out3, operation Mode is: A*B.
+DSP Report: operator out3 is absorbed into DSP out3.
+DSP Report: operator out3 is absorbed into DSP out3.
+DSP Report: Generating DSP out3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator out3 is absorbed into DSP out3.
+DSP Report: operator out3 is absorbed into DSP out3.
+INFO: [Synth 8-5546] ROM "id/inst_type_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "id/reg_we_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "id/branch_tag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "id/alu_op_o" is below threshold of ROM address width. It will be mapped to LUTs
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_we[3] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_we[2] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_we[1] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_we[0] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_addr[31] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_addr[30] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_addr[29] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_addr[28] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_addr[27] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_addr[26] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_addr[25] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_addr[24] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_addr[23] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_addr[22] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_addr[21] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_addr[20] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[31] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[30] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[29] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[28] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[27] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[26] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[25] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[24] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[23] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[22] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[21] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[20] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[19] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[18] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[17] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[16] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[15] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[14] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[13] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[12] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[11] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[10] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[9] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[8] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[7] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[6] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[5] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[4] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[3] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[2] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[1] driven by constant 0
+WARNING: [Synth 8-3917] design cpu_top has port inst_sram_wdata[0] driven by constant 0
+INFO: [Synth 8-3886] merging instance 'id_ex/inst_type_ex_reg[2]' (FDRE) to 'id_ex/inst_op_ex_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\id_ex/inst_op_ex_reg[2] )
+INFO: [Synth 8-3886] merging instance 'mem/mem_we_reg[0]' (LD) to 'mem/mem_we_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mem/mem_we_reg[1]' (LD) to 'mem/mem_we_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mem/mem_we_reg[2]' (LD) to 'mem/mem_we_reg[3]'
+WARNING: [Synth 8-3332] Sequential element (id/reg1_re_o_reg) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (id/reg2_re_o_reg) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (id/reg1_addr_o_reg[4]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (id/reg1_addr_o_reg[3]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (id/reg1_addr_o_reg[2]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (id/reg1_addr_o_reg[1]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (id/reg1_addr_o_reg[0]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (id/reg2_addr_o_reg[4]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (id/reg2_addr_o_reg[3]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (id/reg2_addr_o_reg[2]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (id/reg2_addr_o_reg[1]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (id/reg2_addr_o_reg[0]) is unused and will be removed from module cpu_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1178.996 ; gain = 451.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|alu         | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1181.992 ; gain = 454.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1186.762 ; gain = 458.848
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regs/regs_reg[0][19] )
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1275.426 ; gain = 547.512
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1280.211 ; gain = 552.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1280.211 ; gain = 552.297
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1280.211 ; gain = 552.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1280.211 ; gain = 552.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1280.211 ; gain = 552.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1280.211 ; gain = 552.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     2|
+|2     |CARRY4    |   650|
+|3     |DSP48E1_1 |     3|
+|4     |LUT1      |   129|
+|5     |LUT2      |   313|
+|6     |LUT3      |  2057|
+|7     |LUT4      |   142|
+|8     |LUT5      |   439|
+|9     |LUT6      |  1046|
+|10    |MUXF7     |   255|
+|11    |MUXF8     |   107|
+|12    |FDRE      |  1341|
+|13    |LD        |    33|
+|14    |IBUF      |    66|
+|15    |OBUF      |   138|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  6721|
+|2     |  ex     |ex     |  2829|
+|3     |    alu  |alu    |  2829|
+|4     |  ex_mem |ex_mem |   227|
+|5     |  id     |id     |   103|
+|6     |  id_ex  |id_ex  |   961|
+|7     |  if_id  |if_id  |   325|
+|8     |  mem    |mem    |     1|
+|9     |  mem_wb |mem_wb |   124|
+|10    |  pc_reg |pc_reg |    43|
+|11    |  regs   |regs   |  1902|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1280.211 ; gain = 552.297
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 66 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:47 ; elapsed = 00:00:53 . Memory (MB): peak = 1280.211 ; gain = 440.059
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1280.211 ; gain = 552.297
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 1283.793 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1048 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 33 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1283.793 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 33 instances were transformed.
+  LD => LDCE (inverted pins: G): 33 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+83 Infos, 186 Warnings, 48 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:00 ; elapsed = 00:01:01 . Memory (MB): peak = 1283.793 ; gain = 845.699
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1283.793 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/steve/Desktop/cpu/cpu.runs/synth_1/cpu_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cpu_top_utilization_synth.rpt -pb cpu_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Sep  8 00:09:23 2023...

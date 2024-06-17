@@ -1,0 +1,1131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>user</spirit:library>
+  <spirit:name>bluetooth_top</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>S00_AXI</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm_rtl" spirit:version="1.0"/>
+      <spirit:slave>
+        <spirit:memoryMapRef spirit:memoryMapRef="S00_AXI"/>
+      </spirit:slave>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awaddr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWPROT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awprot</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WSTRB</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wstrb</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BRESP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_bresp</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_bvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_bready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_araddr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARPROT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_arprot</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_arvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_arready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RRESP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rresp</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>WIZ_DATA_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S00_AXI.WIZ_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197">32</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>WIZ_NUM_REG</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S00_AXI.WIZ_NUM_REG" spirit:minimum="4" spirit:maximum="512" spirit:rangeType="long">4</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>SUPPORTS_NARROW_BURST</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S00_AXI.SUPPORTS_NARROW_BURST" spirit:choiceRef="choice_pairs_ce1226b1">0</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S00_AXI_RST</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_aresetn</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_RST.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S00_AXI_CLK</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_aclk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.ASSOCIATED_BUSIF">S00_AXI</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.ASSOCIATED_RESET">s00_axi_aresetn</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:memoryMaps>
+    <spirit:memoryMap>
+      <spirit:name>S00_AXI</spirit:name>
+      <spirit:addressBlock>
+        <spirit:name>S00_AXI_reg</spirit:name>
+        <spirit:baseAddress spirit:format="long" spirit:resolve="user">0</spirit:baseAddress>
+        <spirit:range spirit:format="long">4096</spirit:range>
+        <spirit:width spirit:format="long">32</spirit:width>
+        <spirit:usage>register</spirit:usage>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>OFFSET_BASE_PARAM</spirit:name>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.S00_AXI.S00_AXI_REG.OFFSET_BASE_PARAM">C_S00_AXI_BASEADDR</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>OFFSET_HIGH_PARAM</spirit:name>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.S00_AXI.S00_AXI_REG.OFFSET_HIGH_PARAM">C_S00_AXI_HIGHADDR</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:addressBlock>
+    </spirit:memoryMap>
+  </spirit:memoryMaps>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsynthesis</spirit:name>
+        <spirit:displayName>Verilog Synthesis</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>bluetooth_top_v1_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsynthesis_xilinx_com_user_bt_top_1_0__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>f0818c33</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogbehavioralsimulation</spirit:name>
+        <spirit:displayName>Verilog Simulation</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>bluetooth_top_v1_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogbehavioralsimulation_xilinx_com_user_bt_top_1_0__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogbehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>f0818c33</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_softwaredriver</spirit:name>
+        <spirit:displayName>Software Driver</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:sw.driver</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_softwaredriver_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>aece6e0d</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>0e5443b4</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>bd_tcl</spirit:name>
+        <spirit:displayName>Block Diagram</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:block.diagram</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>bd_tcl_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>16328387</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>rxd_pin</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>txd_pin</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_aclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_aresetn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awaddr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH&apos;)) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awprot</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wstrb</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) / 8) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_bresp</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_bvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_bready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_araddr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH&apos;)) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_arprot</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_arvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_arready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rresp</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>C_S00_AXI_DATA_WIDTH</spirit:name>
+        <spirit:displayName>C S00 AXI DATA WIDTH</spirit:displayName>
+        <spirit:description>Width of S_AXI data bus</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH" spirit:order="3" spirit:rangeType="long">32</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_S00_AXI_ADDR_WIDTH</spirit:name>
+        <spirit:displayName>C S00 AXI ADDR WIDTH</spirit:displayName>
+        <spirit:description>Width of S_AXI address bus</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH" spirit:order="4" spirit:rangeType="long">4</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_list_6fc15197</spirit:name>
+      <spirit:enumeration>32</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
+      <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
+      <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_ce1226b1</spirit:name>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/bt_top_0/bt_top_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/bluetooth_top_v1_0_S00_AXI.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/bluetooth_top_v1_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_399ef6c8</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsynthesis_xilinx_com_user_bt_top_1_0__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="user" xilinx:name="bt_top" xilinx:version="1.0">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/bt_top_0/bt_top_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/bluetooth_top_v1_0_S00_AXI.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/bluetooth_top_v1_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogbehavioralsimulation_xilinx_com_user_bt_top_1_0__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="user" xilinx:name="bt_top" xilinx:version="1.0">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_softwaredriver_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>drivers/bluetooth_top_v1_0/data/bluetooth_top.mdd</spirit:name>
+        <spirit:userFileType>mdd</spirit:userFileType>
+        <spirit:userFileType>driver_mdd</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/bluetooth_top_v1_0/data/bluetooth_top.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>driver_tcl</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/bluetooth_top_v1_0/src/Makefile</spirit:name>
+        <spirit:userFileType>driver_src</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/bluetooth_top_v1_0/src/bluetooth_top.h</spirit:name>
+        <spirit:fileType>cSource</spirit:fileType>
+        <spirit:userFileType>driver_src</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/bluetooth_top_v1_0/src/bluetooth_top.c</spirit:name>
+        <spirit:fileType>cSource</spirit:fileType>
+        <spirit:userFileType>driver_src</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/bluetooth_top_v1_0/src/bluetooth_top_selftest.c</spirit:name>
+        <spirit:fileType>cSource</spirit:fileType>
+        <spirit:userFileType>driver_src</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/bluetooth_top_v1_0.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_0e5443b4</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>bd_tcl_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>bd/bd.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>AXI Bluetooth Basic</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_DATA_WIDTH</spirit:name>
+      <spirit:displayName>C S00 AXI DATA WIDTH</spirit:displayName>
+      <spirit:description>Width of S_AXI data bus</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197" spirit:order="3">32</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_DATA_WIDTH">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_ADDR_WIDTH</spirit:name>
+      <spirit:displayName>C S00 AXI ADDR WIDTH</spirit:displayName>
+      <spirit:description>Width of S_AXI address bus</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_ADDR_WIDTH" spirit:order="4" spirit:rangeType="long">4</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_ADDR_WIDTH">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_BASEADDR</spirit:name>
+      <spirit:displayName>C S00 AXI BASEADDR</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_BASEADDR" spirit:order="5" spirit:bitStringLength="32">0xFFFFFFFF</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_BASEADDR">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_HIGHADDR</spirit:name>
+      <spirit:displayName>C S00 AXI HIGHADDR</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_HIGHADDR" spirit:order="6" spirit:bitStringLength="32">0x00000000</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_HIGHADDR">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">bluetooth_top_v1_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">artix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">aspartan7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">kintex7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">qartix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">aartix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">virtex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">virtexu</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">artix7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">qkintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">qkintex7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">qvirtex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">spartan7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">zynquplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">kintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">kintexuplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">qzynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">virtexuplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">virtexuplus58g</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">azynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">virtexuplusHBM</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">akintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">zynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">kintexu</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>AXI Bluetooth Basic</xilinx:displayName>
+      <xilinx:coreRevision>8</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2022-08-30T12:52:59Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a99afc6_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@544ecae2_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5692ad3b_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72408e3d_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3aa67e30_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50580c1c_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22439748_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13c8ae81_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@400ff660_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a487d90_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54a312b0_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27f5aac9_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fd98325_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@245ccf3_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40033b09_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4aaeaeca_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73087675_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@320e31ba_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17fbed5_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ee8c7a7_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33d79af6_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c34cb3c_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1275d554_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11ccd2c9_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b204871_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@274bf727_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50f5a930_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72041ad8_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ed465ad_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14281794_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@792837bd_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1747ea4c_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@530e94f9_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@135f0b52_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1187ed8e_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cb3e354_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63daf3d0_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31d1b3e1_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3600e0c4_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3dee8dce_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b4531d6_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a09d983_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48488dba_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f793ca9_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26ea7aba_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60501a28_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6db6aa12_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c574f59_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a096247_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a51084c_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72d4d671_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a990a70_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7487e8e6_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44c50967_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22556c09_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ba0aae0_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9222c3e_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@704cee84_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ce71ee_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31302d4_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d366b6d_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a68c79b_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ffc90b4_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ee9293_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8533356_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5626c24a_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@362b7df2_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@514211ff_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69f398c2_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4cf3334b_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@420797fe_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b20baf0_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10285eb8_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f3e26b3_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b16f61a_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a60bd7d_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@577bf784_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11084f2_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1bdcb962_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77b3056d_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d9702a5_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44621004_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45d051d5_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52bd1dd_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a8b88f8_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d4b8ceb_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f5094a7_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73f50e80_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15d8f68a_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2dd1c8bb_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40c9df0_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@494096f7_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f871642_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a2c8278_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fba0545_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78506636_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@daef7f4_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7be03dc7_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4be6093e_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7391324_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7dab9178_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72955925_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f487738_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60b5362e_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18e347c_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@578352e_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@86f3be2_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b690d4_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54e47e20_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b3b32ef_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b92d329_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b1f76ef_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@632da476_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@496e8b2d_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10cde83f_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31202ab6_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4366b95f_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e843a85_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@453a1f34_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c0744f0_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@333cecb6_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61a33048_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d773d8e_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63a377a1_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2866e28d_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@632af9ba_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7323333f_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@675bdbbc_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40d3b888_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f1807b1_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@747f747b_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e505ab8_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f981243_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@159577c5_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4632479_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@689a2f5a_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6dafbe99_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d15a80b_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4aefc66f_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@92f782c_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21e71f59_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6494beca_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c9868c7_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13440863_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68fdd439_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4071b57e_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@493bf41e_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16af397a_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@da1b067_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55375f81_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e227461_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@104dcaa3_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b7069_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f6b9c41_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ebe55f2_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73b515fa_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58dc8975_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6730a8d6_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@260cf35a_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6cd2abca_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27b26154_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e93a612_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a4c33e0_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50396b6e_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47eeae6_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59287200_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@727cbc11_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c3096a8_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f30247a_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@694ba2e7_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2eea308c_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ed5b0e6_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70c3b220_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a4f682b_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@aacb602_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3989546d_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a2a9762_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d690396_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a6df1fb_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17ea30a2_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55b5e411_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79ced81b_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@686d82a0_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e7c7036_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6120c47e_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72fea3e0_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77425714_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1aa07ab8_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b030cfc_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33aeb723_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9aa3af7_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73a5edae_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29875157_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2330e9a9_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a5d00d8_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7417c70d_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6633d0f5_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b05bb8d_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26f8b53e_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23b66309_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b8fc7c4_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51bb6a59_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ffa20ca_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@699de123_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2250f47d_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@723d4b5_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29086661_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3368d1a7_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d062ca2_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c39f56b_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1905b750_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@544a7a55_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6516b007_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d9daf76_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28b0cd53_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@283c0dca_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47438aa0_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d768c72_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a79cce2_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ff6b83_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4eb69fba_ARCHIVE_LOCATION">c:/Users/lz/Desktop/code/Vivado/ip_repo/bluetooth_top_1.0</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="7a63f3fc"/>
+      <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed1368d5"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="e4ac8f2a"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="397cd5e7"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="6992ea72"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="97567827"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

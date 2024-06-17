@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../cpu.srcs/sources_1/ip/inst_sram/sim/inst_sram.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

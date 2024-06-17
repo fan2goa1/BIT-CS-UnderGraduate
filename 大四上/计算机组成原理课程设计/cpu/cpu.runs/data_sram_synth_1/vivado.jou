@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Sep  6 15:45:09 2023
+# Process ID: 11412
+# Current directory: D:/file/project/vivado/cpu/cpu.runs/data_sram_synth_1
+# Command line: vivado.exe -log data_sram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source data_sram.tcl
+# Log file: D:/file/project/vivado/cpu/cpu.runs/data_sram_synth_1/data_sram.vds
+# Journal file: D:/file/project/vivado/cpu/cpu.runs/data_sram_synth_1\vivado.jou
+#-----------------------------------------------------------
+source data_sram.tcl -notrace

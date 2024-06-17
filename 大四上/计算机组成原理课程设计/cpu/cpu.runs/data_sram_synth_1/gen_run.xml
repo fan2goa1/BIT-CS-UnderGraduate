@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="data_sram_synth_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1693986305">
+  <File Type="PA-TCL" Name="data_sram.tcl"/>
+  <File Type="REPORTS-TCL" Name="data_sram_reports.tcl"/>
+  <File Type="RDS-RDS" Name="data_sram.vds"/>
+  <File Type="RDS-UTIL" Name="data_sram_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="data_sram_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="data_sram.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/data_sram">
+    <File Path="$PSRCDIR/sources_1/ip/data_sram/data_sram.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="data_sram"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/data_sram">
+    <File Path="$PSRCDIR/sources_1/ip/data_sram/data_sram.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="data_sram"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
