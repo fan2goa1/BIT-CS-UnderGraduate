@@ -59,3 +59,14 @@
 |        | 卓越工程综合训练                                             | 2    | 考查     | 必修     |                    |                    |                    |
 
 *其中考核方式后面打星号\*的表示本应考试但是因疫情转为考查*。
+
+## 🌟Stars Trends
+
+<a href="https://star-history.com/#fan2goa1/best-of-usyd&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=fan2goa1/BIT-CS-UnderGraduate&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=fan2goa1/BIT-CS-UnderGraduate&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=fan2goa1/BIT-CS-UnderGraduate&type=Date" />
+  </picture>
+</a>
+
